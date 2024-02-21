@@ -103,25 +103,21 @@
     background: #3E8DA8;
     border-radius: 0 0 4px 4px;
     display: none;
-    padding: 5px 10px;
-    flex-direction: column;
     cursor: pointer;
     left: 20%;
+    padding: 0px;
     width: 800px;
 }
 .nav_bar .menu ul li:hover .megamenu {
     display: flex;
     flex-wrap: wrap;
 }
-/* .nav_bar .menu ul li .megamenu .menu-list{
-
-} */
-/* .nav_bar .menu ul li .megamenu .menu-list li{
-    
-} */
+.nav_bar .menu ul li .megamenu .menu-list{
+    padding-left: 5px;
+}
 
 .sub_menu_list{
-    padding: 10px 5px !important;
+    padding: 10px 20px !important;
     margin: 0px 10px !important;
 }
 
