@@ -8,26 +8,30 @@
 }
 
 :root {
-    --navbg: #3E8DA8;
-    --navcolor: #fff;
-    --submenuDesc: #d9d3d3b6;
-    --navhover: rgba(227, 227, 247, 0.802);
-    --submenuhover: rgba(128, 176, 176, 0.208);
-    --navborderbottom: #ffffff26;
-
+    --navbg: #fffffffd;
+    --navcolor: #000;
+    --submenuDesc: #0000009a;
+    --navhover: #00000092;
+    --submenuhover: rgba(10, 87, 87, 0.081);
+    --navborderbottom: #19b2e5;
+    --s_title: #37a001;
+ 
     --white: #fff;
     --black: #000;
     --dark: #000;
     --gray: #22222227;
     --primary: #007bff;
 }
-
+body{
+    background-color: var(--submenuhover);
+}
 .content{
     padding: 0px 50px;
 } 
 .nav{
     background: var(--navbg);
     color: var(--navcolor);
+    border-bottom: 5px solid #3E8DA8;
 }
 .nav_bar{
     width: 100%;
@@ -37,9 +41,12 @@
     
 }
 .nav_bar .logo{
-    width: 10%;
+    width: 15%;
     height: 100%;
     font-size: 30px;
+}
+.nav_bar .logo img{
+    width: 100%;
 }
 
 .nav_bar .menu{
@@ -101,9 +108,13 @@
     background: var(--navbg);
     border-radius: 0 0 4px 4px;
     display: none;
-    padding: 0px 10px;
+    padding: 0px !important;
     cursor: pointer;
     flex-direction: column;
+}
+.nav_bar .menu ul li .sub-menu-service li a{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
 }
 
 .nav_bar .menu ul li:hover .sub-menu-service {
@@ -113,6 +124,9 @@
 .nav_bar .menu ul li .sub-menu-service li {
     line-height: 2px;
     border-bottom: 0.2px dashed var(--navborderbottom);
+}
+.nav_bar .menu ul li .sub-menu-service li:hover{
+    background-color: var(--submenuhover) !important;
 }
 
 .nav_bar .menu ul li .megamenu {
@@ -155,7 +169,7 @@
 }
 
 .sub_menu_title{
-    font-size: 18px;
+    font-size: 16px;
 }
 .sub_menu_desc{
     font-size: 13px;
@@ -176,7 +190,7 @@
 }
 
 .banner {
-    margin-top: 120px;
+    margin-top: 150px;
 }
 
 .ban_title{
@@ -214,6 +228,25 @@
     color: #00000098;
 }
 /* banner design end*/
+
+/* service design end*/
+.s_service h2{
+    font-weight: 600;
+}
+.s_content {
+    padding: 0px 300px;
+}
+
+.s_title {
+    color: var(--s_title);
+    font-weight: 600;
+}
+
+.s_content p {
+    line-height: 1.4;
+    font-size: 14px;
+    color: var(--submenuDesc);
+}
 
 
 
