@@ -420,6 +420,10 @@ body{
 
 /* portfolio end */
 
+.about_title{
+    color: var(--s_title);
+}
+
 .about-icon {
     margin-right: 25px;
     border-radius: 50%;
