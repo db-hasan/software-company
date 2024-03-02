@@ -352,7 +352,7 @@ body{
     width: 100%;
     height: 100%;
     padding-top: 50px;
-    background: linear-gradient(103deg, #b1c2fe98, #aaa49fd2);
+    background: linear-gradient(103deg, #52535898, #aaa49fd2);
 }
 
 
@@ -405,3 +405,12 @@ body{
     color: var(--s_title);
 }
 
+.button{
+    background: linear-gradient(103deg, #21ee40, #ff8e32d2);
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+}
