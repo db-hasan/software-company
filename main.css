@@ -454,10 +454,27 @@ body{
     top: 0;
     left: 0;
     padding-left: 80px;
-    padding-top: 80px;
-    
+    padding-top: 80px;  
 }
+
 .about_img img{
     border-radius: 20px;
+}
+
+.circle-progress-icon{
+    margin: 10px;
+    padding: 0px 25px 25px 25px;
+    padding-top: 10px;
+    border: 15px solid #21ee40;
+    border-radius: 100%;
+}
+.circle-progress-icon .success{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.success_title{
+    font-size: 16px;
+    font-weight: 800;
 }
 
