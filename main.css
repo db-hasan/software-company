@@ -478,3 +478,22 @@ body{
     font-weight: 800;
 }
 
+.achievement{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 5px solid #E8F7F6;
+}
+
+.ach_content{
+    padding: 20px;
+}
+
+.ach_content img{
+    width: 50px;
+}
+
+.ach_content .counter{
+    font-size: 40px;
+    line-height: 1;
+}
