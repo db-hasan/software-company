@@ -643,7 +643,7 @@
         </div>
     </section>
 
-    <section class="content">
+    <section class="content py-4">
         <div class="pt-5">
             <div class="s_service d-flex align-items-center justify-content-center pb-2">
                 <span class=""><img src="images/icon.png" alt="" style="width: 40px;"></span>
@@ -706,14 +706,6 @@
             </div>
         </div>
 
-            
-
-
-
-
-
-        
-
         <div class="shadow-lg mb-4 bg-body-tertiary contact_card">
             <div class="row">
                 <div class="col-12 col-lg-5 ">
@@ -734,42 +726,53 @@
         </div>
     </section>
 
-
+    <section class="footer">
+        <div class="content py-5">
+            <div class="row">
+                <div class="col-4">
+                    <h4 class="widget-title">SoftxOne Limited</h4>
+                    <p class="pe-5">We specialize in converting your Vision about your website into Reality. Welcome to SoftxOne Limited, a specialist web design
+                    and development agency based in Bangladesh.</p>
+                    <h4 class="widget-title">Subscribe to our newsletter:</h4>
+                    <form class="">
+                        <input type="text" class="form-control" id="subscribe" placeholder="name@example.com">
+                        <button type="button" class="btn btn-primary subscribe-button"><i class="fa fa-rss pe-2"></i>Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <h4 class="widget-title">Quick Links</h4>
+                    <ul>
+                        <li>Contact</li>
+                        <li>Career</li>
+                        <li>Notice</li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h4 class="widget-title">Features</h4>
+                    <ul>
+                        <li>Contact</li>
+                        <li>Career</li>
+                        <li>Notice</li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h4 class="widget-title">About</h4>
+                    <ul>
+                        <li>Contact</li>
+                        <li>Career</li>
+                        <li>Notice</li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
-
 <script src="main.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var counters = document.querySelectorAll('.purecounter');
-        counters.forEach(counter => {
-            var start = parseInt(counter.getAttribute('data-purecounter-start'));
-            var end = parseInt(counter.getAttribute('data-purecounter-end'));
-            var duration = parseInt(counter.getAttribute('data-purecounter-duration'));
-            var range = end - start;
-            var stepTime = Math.abs(Math.floor(duration / range));
-            var startTime = new Date().getTime();
-            var endTime = startTime + duration;
-            var timer;
-
-            function runCounter() {
-                var now = new Date().getTime();
-                var remaining = Math.max((endTime - now) / duration, 0);
-                var value = Math.round(end - (remaining * range));
-                counter.innerHTML = value;
-                if (value == end) {
-                    clearInterval(timer);
-                }
-            }
-
-            timer = setInterval(runCounter, stepTime);
-            runCounter();
-        });
-    });
-</script>
-
-
 </body>
 </html>
