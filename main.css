@@ -548,7 +548,7 @@ body{
     position: relative;
 }
 
-.footer input {
+.footer .subscribe {
     width: 100%;
     height: 55px;
     background: #fff;
@@ -573,4 +573,16 @@ body{
     background-image: linear-gradient(135deg, #16f036, #7cf016ad);
 }
 
+
+.gateway{
+    width: 12%;
+}
+.payment_gateway{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #fff;
+    padding: 10px 5px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
 
