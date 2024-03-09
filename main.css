@@ -189,70 +189,72 @@ body{
     /* justify-content: center; */
 }
 
-.banner {
+#banner .banner {
     margin-top: 150px;
 }
 
-.ban_title{
+#banner .ban_title{
     color: var(--white);
 }
-.ban_card{
+#banner .ban_card{
     background-color: #ffffffc5 !important;
     border-radius: 8px;
 }
-.ban_card a{
+#banner .ban_card a{
     text-decoration: none;
 }
-.ban_content{
+#banner .ban_content{
     align-items: center;
 }
-.ban_content:hover{
+#banner .ban_content:hover{
     background-color: var(--submenuhover);
 }
-.ban_img img{
+#banner .ban_img img{
     width: 70px;
     padding: 10px;
 }
 
-.ban_content{
+#banner .ban_content{
     padding: 5px;
 }
 
-.ban_content h4{
+#banner .ban_content h4{
     font-size: 16px;
     color: #000;
     margin-bottom: 0px !important;
 }
-.ban_content span{
+#banner .ban_content span{
     font-size: 14px;
     color: #00000098;
 }
 /* banner design end*/
 
-/* service design end*/
+
+/* Global class Start */
 .s_service h2{
     font-weight: 600;
 }
-.s_content {
-    padding: 0px 300px;
-}
+
 
 .s_title {
     color: var(--s_title);
     font-weight: 600;
 }
 
-.s_content p {
+.s_content {
+    padding: 0px 200px;
     line-height: 1.4;
     font-size: 14px;
     color: var(--submenuDesc);
 }
+
 .service p{
     text-align: justify;
 }
 .title{
     color: var(--s_title);
 }
+
 .card_color{
     background-image: linear-gradient(135deg,  #c8d4ff, #f5e9e9);
     border-left: 5px solid #c8d4ff;
@@ -276,79 +278,100 @@ body{
     color: #000 !important;
 }
 
-.menu_list{
-    width: 20%;
-    
-}
-.content_hight{
-    height: 400px;
-}
-.menu_content{
-    width: 80%;
-}
-
-.service-memu{
-    list-style: none;
-    padding-left: 0 !important;
-}
-/* Webkit scrollbar styles */
-.service-memu {
-    max-height: 340px;
-    overflow-y: auto;
-}
-
-.service-memu::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-}
-
-/*scrollbar site icone*/
-.service-memu::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 5px;
-}
-/* Webkit scrollbar styles end */
-
-.service-memu li{
-    padding: 5px 20px;
-    border-bottom: 1px solid #b1c2fe;
-}
-
-.service-memu li a{
-    text-decoration: none;
-    color: #000;
-}
-
-.service-memu li:hover{
-    background-color: var(--submenuhover) !important;
-}
-
-.s_img{
+.s_img {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.tap{
+.button {
+    background: linear-gradient(103deg, #21ee40, #ff8e32d2);
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.button:hover {
+    background: linear-gradient(103deg, #41da58, #e08133d2);
+}
+/* Global class end */
+
+/* software design end */
+#software .menu_list{
+    width: 20%;
+    
+}
+#software .content_hight{
+    height: 400px;
+}
+#software .menu_content{
+    width: 80%;
+}
+
+#software .service-memu{
+    list-style: none;
+    padding-left: 0 !important;
+}
+
+/* Webkit scrollbar styles */
+#software .service-memu {
+    max-height: 340px;
+    overflow-y: auto;
+}
+
+#software .service-memu::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/*scrollbar site icone*/
+#software .service-memu::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+/* Webkit scrollbar styles end */
+
+#software .service-memu li{
+    padding: 5px 20px;
+    border-bottom: 1px solid #b1c2fe;
+}
+
+#software .service-memu li a{
+    text-decoration: none;
+    color: #000;
+}
+
+#software .service-memu li:hover{
+    background-color: var(--submenuhover) !important;
+}
+/* software design end */
+
+
+/* portfolio design start */
+#portfolio .tap{
     background-color: #cbddef77;
     padding-left: 0px;
 }
-.tap .btn{
+
+#portfolio .tap .btn{
     border: none !important;
 }
 
-.tap li.active {
+#portfolio .tap li.active {
     box-shadow: -6px -6px 10px 0px #f5f9fc, 4px 3px 15px 0px rgba(127, 163, 199, 0.3);
     background: linear-gradient(103deg, #e3edf7, #ffffff);
 }
 
-.product-btn {
+#portfolio .product-btn {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     position: absolute;
 }
 
-.card:hover .product-btn {
+#portfolio .card:hover .product-btn {
     opacity: 1;
     width: 100%;
     height: 100%;
@@ -356,10 +379,7 @@ body{
     background: linear-gradient(103deg, #52535898, #aaa49fd2);
 }
 
-
-
-
-.product-btn a {
+#portfolio .product-btn a {
     padding: 5px 0px;
     text-align: center;
     text-decoration: none;
@@ -370,31 +390,31 @@ body{
     font-weight: 500;
 }
 
-
-.p_title .p_name{
+#portfolio .p_title .p_name{
     font-size: 16px;
     font-weight: 400;
 }
-.p_title .p_cate{
+
+#portfolio .p_title .p_cate{
     font-size: 12px;
 }
 
-.p_btn{
+#portfolio .p_btn{
     gap: 8px;
 }
 
-.product-btn .read{
+#portfolio .product-btn .read{
     background: linear-gradient(103deg, #21ee40, #ff8e32d2);
 }
 .product-btn .view{
     background: linear-gradient(103deg, #FF8F32, #21ee40);
 }
 
-.p_img{
+#portfolio .p_img{
     border-bottom: 5px solid #19b2e5;
 }
 
-.p_comp a{
+#portfolio .p_comp a{
     padding: 0px 15px;
     text-decoration: none;
     color: #000;
@@ -402,44 +422,34 @@ body{
     font-weight: 500;
 }
 
-.p_comp a:hover{
+#portfolio .p_comp a:hover{
     color: var(--s_title);
-}
-
-.button{
-    background: linear-gradient(103deg, #21ee40, #ff8e32d2);
-    padding: 10px 25px;
-    border-radius: 25px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 19px;
-    font-weight: 500;
-}
-.button:hover{
-    background: linear-gradient(103deg, #41da58, #e08133d2);
 }
 
 /* portfolio end */
 
-.about_title{
+
+/* about design strat */
+
+#about .about_title{
     color: var(--s_title);
 }
 
-.about-icon {
+#about .about-icon {
     margin-right: 25px;
     border-radius: 50%;
     transition: 0.6s cubic-bezier(0.24, 0.74, 0.58, 1);
     box-shadow: 0px 25px 24px 0px rgba(4, 21, 59, 0.276);
     background-color: #b9d8e249;
 }
-.about-icon img{
+#about .about-icon img{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px;  
 }
 
-.about_card {
+#about .about_card {
     top: 0;
     left: 0;
     width: 205px;
@@ -451,7 +461,7 @@ body{
     z-index: 1;
 }
 
-.about_img{
+#about .about_img{
     top: 0;
     left: 0;
     padding-left: 80px;
@@ -462,49 +472,51 @@ body{
     border-radius: 20px;
 }
 
-.circle-progress-icon{
+#about .circle-progress-icon{
     margin: 10px;
     padding: 0px 25px 25px 25px;
     padding-top: 10px;
     border: 15px solid #21ee40;
     border-radius: 100%;
 }
-.circle-progress-icon .success{
+#about .circle-progress-icon .success{
     font-size: 25px;
     font-weight: 800;
 }
 
-.success_title{
+#about .success_title{
     font-size: 16px;
     font-weight: 800;
 }
+/* about design end */
 
-.achievement{
+/* achievement design start */
+#achievement .achievement{
     width: 190px;
     height: 190px;
     border-radius: 50%;
     border: 5px solid #E8F7F6;
 }
 
-.ach_content{
+#achievement .ach_content{
     padding: 20px;
 }
 
-.ach_content img{
+#achievement .ach_content img{
     width: 50px;
 }
 
-.ach_content .counter{
+#achievement .ach_content .counter{
     font-size: 40px;
     line-height: 1;
 }
 
-
-.contact_card {
+#achievement .contact_card {
     background-image: linear-gradient(135deg, #e8f7f6d2, #f5e9e9d7);
     border-radius: 15px !important;
     padding: 30px;
 }
+
 .contact_card{
     font-size: 16px;
     font-weight: 400;
@@ -520,25 +532,26 @@ body{
     color: #000;
 }
 
-.footer{
+#footer .footer{
     background-image: linear-gradient(135deg, #e8f7f6d2, #f5e9e9d7);
 }
 
-.footer p{
+#footer .footer p{
     text-align: justify;
 }
 
-.footer .widget-title {
+#footer .footer .widget-title {
     font-size: 18px;
     color: #000;
     padding-bottom: 20px;
 }
 
-.footer ul{
+#footer .footer ul{
     list-style: none;
     padding-left: 0px;
 }
-.footer ul li{
+
+#footer .footer ul li{
     padding: 5px 0px;
 }
 
@@ -548,7 +561,7 @@ body{
     position: relative;
 }
 
-.footer .subscribe {
+#footer .footer .subscribe {
     width: 100%;
     height: 55px;
     background: #fff;
@@ -557,7 +570,7 @@ body{
     border: none;
 }
 
-.subscribe-button {
+#footer .subscribe-button {
     height: 30px;
     padding: 0 15px;
     border-radius: 3px;
@@ -573,11 +586,11 @@ body{
     background-image: linear-gradient(135deg, #16f036, #7cf016ad);
 }
 
-
-.gateway{
+#footer .gateway{
     width: 12%;
 }
-.payment_gateway{
+
+#footer .payment_gateway{
     display: flex;
     justify-content: space-around;
     border: 2px solid #fff;
