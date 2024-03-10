@@ -28,80 +28,82 @@ body{
 .content{
     padding: 0px 50px;
 } 
+
+/* header design start */
+
 .nav{
     background: var(--navbg);
     color: var(--navcolor);
     border-bottom: 5px solid #3E8DA8;
 }
-.nav_bar{
+#header .nav_bar{
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     
 }
-.nav_bar .logo{
+#header .nav_bar .logo{
     width: 15%;
     height: 100%;
     font-size: 30px;
 }
-.nav_bar .logo img{
+#header .nav_bar .logo img{
     width: 100%;
 }
 
-.nav_bar .menu{
+#header .nav_bar .menu{
     width: 90%;
     height: 100%;
     padding: 0px 20px;
 }
 
-.nav_bar .menu ul{
+#header .nav_bar .menu ul{
     list-style: none;
     display: flex;
     justify-content: end;
     margin-bottom: 0px;
 }
 
-.nav_bar .menu ul li{
+#header .nav_bar .menu ul li{
     padding: 20px 10px;
     height: 100%;
     cursor: pointer;
 }
 
-.nav_bar .menu ul li a{
+#header .nav_bar .menu ul li a{
     text-decoration: none;
     color: var(--navcolor);
     font-size: 16px;
     font-weight: 500;
 }
 
-.arrow {
+#header .arrow {
     height: 100%;
     width: 22px;
     text-align: center;
     color: var(--navcolor);
     transition: all 0.3s ease;
 }
-.nav_bar .menu ul li a:hover{
+#header .nav_bar .menu ul li a:hover{
     color: var(--navhover);
 }
-.nav_bar .menu ul li:hover .arrow{
+#header .nav_bar .menu ul li:hover .arrow{
     transform: rotate(180deg);
 }
 
-.nav_bar .menu_icon i {
+#header .nav_bar .menu_icon i {
     line-height: 50px;
     font-size: 35px;
     color: var(--navcolor);
     cursor: pointer;
 }
 
-.nav_bar .menu_icon i:hover{
+#header .nav_bar .menu_icon i:hover{
     color: var(--navhover);
 }
 
-
-.nav_bar .menu ul li .sub-menu-service {
+#header .nav_bar .menu ul li .sub-menu-service {
     position: absolute;
     top: 63px;
     left: 46%;
@@ -112,24 +114,26 @@ body{
     cursor: pointer;
     flex-direction: column;
 }
-.nav_bar .menu ul li .sub-menu-service li a{
+
+#header .nav_bar .menu ul li .sub-menu-service li a{
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
 
-.nav_bar .menu ul li:hover .sub-menu-service {
+#header .nav_bar .menu ul li:hover .sub-menu-service {
     display: flex;
 }
 
-.nav_bar .menu ul li .sub-menu-service li {
+#header .nav_bar .menu ul li .sub-menu-service li {
     line-height: 2px;
     border-bottom: 0.2px dashed var(--navborderbottom);
 }
-.nav_bar .menu ul li .sub-menu-service li:hover{
+
+#header .nav_bar .menu ul li .sub-menu-service li:hover{
     background-color: var(--submenuhover) !important;
 }
 
-.nav_bar .menu ul li .megamenu {
+#header .nav_bar .menu ul li .megamenu {
     position: absolute;
     top: 63px;
     background: var(--navbg);
@@ -140,41 +144,45 @@ body{
     padding: 0px;
     width: 800px;
 }
-.nav_bar .menu ul li:hover .megamenu {
+
+#header .nav_bar .menu ul li:hover .megamenu {
     display: flex;
     flex-wrap: wrap;
 }
-.nav_bar .menu ul li .megamenu .menu-list{
+
+#header .nav_bar .menu ul li .megamenu .menu-list{
     padding-left: 5px;
 }
 
-.sub_menu_list{
+#header .sub_menu_list{
     padding: 10px 20px !important;
     margin: 0px 10px !important;
 }
 
-.sub_menu_list:hover{
+#header .sub_menu_list:hover{
     background-color: var(--submenuhover);
     border-radius: 8px;
 }
 
-.img-icon img{
+#header .img-icon img{
     width: 25px;
     padding-top: 3px;
 }
 
-.sub_menu_content{
+#header .sub_menu_content{
     padding-left: 8px;
     flex-direction: column;
 }
 
-.sub_menu_title{
+#header .sub_menu_title{
     font-size: 16px;
 }
-.sub_menu_desc{
+
+#header .sub_menu_desc{
     font-size: 13px;
     color: var(--submenuDesc);
 }
+/* Header design  End*/
 
 
 /* banner design  start*/
@@ -196,19 +204,24 @@ body{
 #banner .ban_title{
     color: var(--white);
 }
+
 #banner .ban_card{
     background-color: #ffffffc5 !important;
     border-radius: 8px;
 }
+
 #banner .ban_card a{
     text-decoration: none;
 }
+
 #banner .ban_content{
     align-items: center;
 }
+
 #banner .ban_content:hover{
     background-color: var(--submenuhover);
 }
+
 #banner .ban_img img{
     width: 70px;
     padding: 10px;
@@ -223,6 +236,7 @@ body{
     color: #000;
     margin-bottom: 0px !important;
 }
+
 #banner .ban_content span{
     font-size: 14px;
     color: #00000098;
@@ -234,7 +248,6 @@ body{
 .s_service h2{
     font-weight: 600;
 }
-
 
 .s_title {
     color: var(--s_title);
@@ -248,7 +261,7 @@ body{
     color: var(--submenuDesc);
 }
 
-.service p{
+.text p{
     text-align: justify;
 }
 .title{
@@ -259,9 +272,11 @@ body{
     background-image: linear-gradient(135deg,  #c8d4ff, #f5e9e9);
     border-left: 5px solid #c8d4ff;
 }
+
 .card_hover:hover{
     border-left: 5px solid var(--navborderbottom);
 }
+
 .custom-shadow {
     box-shadow: 0px 0px 10px 5px rgba(146, 146, 148, 0.596) !important; 
 }
