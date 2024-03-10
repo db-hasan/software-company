@@ -7,6 +7,8 @@
 
 @media only screen and (max-width: 576px) {}
 
+@media only screen and (max-width: 425px) {}
+
 @media only screen and (max-width: 350px) {}
 
 /*End*/
@@ -19,9 +21,6 @@
     #website .cont_res, .img_res {
             width: 100% !important;
         }
-    #website .reverse{
-      flex-direction: column-reverse;
-    }
 
     #software .menu_list {
             width: 200px;
@@ -72,6 +71,21 @@
 }
 
 @media only screen and (max-width: 576px) {
+    .content{
+        padding: 0px 10px;
+    }
+
+    #header .menu .home{
+            display: none;
+        }
+    #website .reverse{
+            flex-direction: column-reverse !important;
+        }
+    #website .cont_res,
+        .img_res {
+            width: 100% !important;
+        }
+
     .s_content {
         padding: 0px 0px;
     }
@@ -85,6 +99,9 @@
     }
 }
 
+@media only screen and (max-width: 425px) {
+
+}
 
 @media only screen and (max-width: 350px) {}
 
