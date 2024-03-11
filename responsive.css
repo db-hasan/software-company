@@ -31,6 +31,7 @@
     #header .nav_bar .menu ul li .megamenu {
             left: 4%;
         }
+    
     #website .reverse {
             flex-direction: row-reverse !important;
         }
@@ -71,6 +72,9 @@
     #portfolio .tap li {
             width: 49%;
         } 
+    #footer .content{
+        padding: 0px 30px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -101,9 +105,25 @@
         width: 200px;
     }
 
+    #about .about_btn {
+        display: flex !important;
+    }
+
+    #footer .footer_two{
+        width: 50% !important;
+        padding-left: 50px !important;
+    }
+    #footer .footer_tre{
+        width: 50% !important;
+        padding-left: 50px !important;
+    }
+
 }
 
 @media only screen and (max-width: 490px) {
+    #header .nav_bar .menu ul li .sub-menu-service {
+            left: 42%;
+        }
     .contact_card {
         padding: 30px 20px !important;
     }
@@ -114,6 +134,10 @@
 
     .contact_card a img {
         width: 50px !important;
+    }
+
+    #about .about_img img{
+        width: 300px;
     }
 }
 
