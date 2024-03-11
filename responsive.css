@@ -96,6 +96,10 @@
     .s_content {
         padding: 0px 0px;
     }
+    .s_service h3 {
+        font-size: 18px;
+        font-weight: 400;
+    }
     .s_title {
         font-size: 24px;
         font-weight: 600;
