@@ -195,8 +195,9 @@ body{
     justify-content: center;
 }
 
-#banner .banner {
-    margin-top: 150px;
+#banner .banner_content {
+    padding-top: 200px;
+
 }
 
 #banner .ban_title{
@@ -212,33 +213,33 @@ body{
     text-decoration: none;
 }
 
-#banner .ban_content{
+#banner .ban_desc{
     align-items: center;
+    padding: 5px;
 }
 
-#banner .ban_content:hover{
-    background-color: var(--submenuhover);
-}
-
-#banner .ban_img img{
+#banner .ban_img img {
     width: 70px;
     padding: 10px;
 }
 
-#banner .ban_content{
-    padding: 5px;
-}
 
-#banner .ban_content h4{
+#banner .ban_desc h4 {
     font-size: 16px;
     color: #000;
     margin-bottom: 0px !important;
 }
 
-#banner .ban_content span{
+#banner .ban_desc span {
     font-size: 14px;
     color: #00000098;
 }
+
+#banner .ban_desc:hover{
+    background-color: var(--submenuhover);
+}
+
+
 /* banner design end*/
 
 
