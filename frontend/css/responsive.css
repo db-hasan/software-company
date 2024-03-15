@@ -55,7 +55,9 @@
     #software .soft_img_res {
             display: none;
         }
-     
+    #background {
+            height: 300px;
+        }
 }
 
 @media only screen and (max-width: 768px) {
@@ -120,6 +122,10 @@
     #footer .footer_tre{
         width: 50% !important;
         padding-left: 50px !important;
+    }
+
+    #background {
+             height: 250px;
     }
 
 }
