@@ -649,6 +649,53 @@ body{
     font-size: 16px;
 }
 #background .active{
-    color: #918181 !important;
+    color: #969494 !important;
     text-decoration: none;
+}
+#page{
+    background-image: linear-gradient(135deg, #c5cff3, #f5e9e9);
+}
+
+#page .page_title{
+    padding-top: 110px;
+}
+
+#page .page_title h1{
+    font-size: 50px !important;
+    font-weight: 600;
+    padding-top: 20px;
+}
+#page .page_title .left_icon img{
+    width: 35px;
+}
+#page .page_title .right_icon img{
+    width: 80px;
+}
+
+#page .page_desc{
+    padding-left: 35px;
+}
+
+
+#technolgy .technolgy_title h3 {
+    font-weight: 600;
+    color: #000000b3;
+}
+
+#technolgy .technolgy_title h4 {
+    color: #00000075;
+}
+
+#technolgy .technolgy_img {
+    display: flex;  
+}
+
+#technolgy .technolgy_img img{
+    width: 90px;
+    border: 2px solid #ffffffab;
+    padding: 10px 10px;
+    margin: 0px 5px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    box-shadow: -6px -6px 10px 0px #f5f9fc, 4px 3px 15px 0px rgba(127, 163, 199, 0.3);
 }
