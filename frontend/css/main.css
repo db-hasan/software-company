@@ -75,7 +75,7 @@ body{
 }
 
 #header .nav_bar .menu{
-    width: 90%;
+    width: 85%;
     height: 100%;
     padding: 0px 20px;
 }
@@ -94,6 +94,7 @@ body{
     color: var(--black);
     font-size: 16px;
     font-weight: 500;
+    position: relative;
 }
 
 #header .nav_bar .menu ul li a{
@@ -140,13 +141,17 @@ body{
 #header .nav_bar .menu ul li .sub-menu-service {
     position: absolute;
     top: 63px;
-    left: 52%;
+    left: 50%;
+    transform: translateX(-50%);
     background: var(--white);
     border-radius: 0 0 4px 4px;
     display: none;
-    padding: 0px !important;
+    padding: 0 !important;
     cursor: pointer;
     flex-direction: column;
+    width: max-content;
+    white-space: nowrap;
+    z-index: 1000;
 }
 
 #header .nav_bar .menu ul li .sub-menu-service li a{
@@ -160,7 +165,7 @@ body{
 
 #header .nav_bar .menu ul li .sub-menu-service li {
     line-height: 2px;
-    border-bottom: 0.2px dashed var(--navborderbottom);
+    border-bottom: 0.2px dashed var(--black);
 }
 
 #header .nav_bar .menu ul li .sub-menu-service li:hover{
@@ -170,88 +175,72 @@ body{
 #header .nav_bar .menu ul li .megamenu {
     position: absolute;
     top: 63px;
+    transform: translateX(-50%);
     background: var(--white);
     border-radius: 0 0 4px 4px;
     display: none;
     cursor: pointer;
-    left: 20%;
-    padding: 0px;
+    padding: 0;
     width: 800px;
+    z-index: 1000;
 }
 
 #header .nav_bar .menu ul li:hover .megamenu {
     display: flex;
-    flex-wrap: wrap;
 }
 
 #header .nav_bar .menu ul li .megamenu .menu-list{
     padding-left: 5px;
+    flex-wrap: wrap;
 }
 
-#header .sub_menu_list{
+#header .nav_bar .menu ul li .megamenu .menu-list .sub_menu_list{
     padding: 0px 0px !important;
+    margin: 0px 10px !important;
+    width: calc(33.33% - 20px) !important;
+    height: auto;
+}
+
+#header .nav_bar .menu ul li .megamenu .menu-list .sub_menu_list a{
+    padding: 10px 10px !important;
     margin: 0px 0px !important;
 }
 
-#header .sub_menu_list a{
-    padding: 10px 20px !important;
-    margin: 0px 10px !important;
-}
-
-#header .sub_menu_list:hover{
+#header .nav_bar .menu ul li .megamenu .menu-list .sub_menu_list:hover{
     background-color: var(--background);
     border-radius: 8px;
 }
 
-#header .img-icon img{
+#header .nav_bar .menu ul li .megamenu .menu-list .sub_menu_list .img-icon img{
     width: 25px;
     padding-top: 3px;
 }
 
-#header .sub_menu_content{
+#header .nav_bar .menu ul li .megamenu .menu-list .sub_menu_list .sub_menu_content{
     padding-left: 8px;
     flex-direction: column;
 }
 
-#header .sub_menu_title{
+#header .nav_bar .menu ul li .megamenu .menu-list .sub_menu_list .sub_menu_title{
     font-size: 16px;
 }
 
-#header .sub_menu_desc{
+#header .nav_bar .menu ul li .megamenu .menu-list .sub_menu_list .sub_menu_desc{
     font-size: 13px;
     color: var(--dark);
 }
 
-@media only screen and (max-width: 1100px) {
-    #header .nav_bar .menu ul li .sub-menu-service {
-            left: 45%;
-        }
-    #header .nav_bar .menu ul li .megamenu {
-        left: 15%;
-    }
-    
-}
-
 @media only screen and (max-width: 992px) {
     #header .nav_bar .menu ul li .megamenu {
-            left: 10%;
+            padding-right: 100px;
         }
-    .menu .about {
+    #header .nav_bar .menu .about {
         display: none;
     }
 }
-@media only screen and (max-width: 900px) {
-    #header .nav_bar .menu ul li .megamenu {
-            left: 5%;
-        }
-}
-@media only screen and (max-width: 850px) {
-    #header .nav_bar .menu ul li .megamenu {
-            left: 2%;
-        }
-}
+
 @media only screen and (max-width: 768px) {
-    .menu .product {
+    #header .nav_bar .menu .product {
         display: none;
     }
 }
@@ -269,16 +258,10 @@ body{
     #header .menu .home {
         display: none;
     }
-    #header .nav_bar .menu ul li .megamenu {
-        left: 4%;
-    }
 }
 @media only screen and (max-width: 470px) {
     #header .menu .home {
         display: none;
-    }
-     #header .nav_bar .menu ul li .sub-menu-service {
-        left: 30%;
     }
 }
 /* Header design  End*/
