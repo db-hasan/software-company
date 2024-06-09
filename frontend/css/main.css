@@ -8,33 +8,55 @@
 }
 
 :root {
-    --navbg: #fffffffd;
-    --navcolor: #000;
-    --submenuDesc: #0000009a;
-    --navhover: #00000092;
-    --submenuhover: rgba(10, 87, 87, 0.081);
-    --navborderbottom: #19b2e5;
-    --s_title: #37a001;
- 
+    --background: rgba(10, 87, 87, 0.081);
     --white: #fff;
     --black: #000;
-    --dark: #000;
+    --dark: #0000009a;
     --gray: #22222227;
-    --primary: #007bff;
+    --title: #37a001;
+    --s_title: #4154f1;
+    --border: #3E8DA8;
+
 }
 body{
-    background-color: var(--submenuhover);
+    background-color: var(--background);
 }
 .content{
     padding: 0px 50px;
 } 
+/* custom scrollbar start*/ 
+.custom-scrollbar {
+    overflow: auto !important;
+}
 
-/* header design start */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px !important;
+    height: 5px !important;
+}
 
-.nav{
-    background: var(--navbg);
-    color: var(--navcolor);
-    border-bottom: 5px solid #3E8DA8;
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px !important;
+}
+/* custom scrollbar end*/
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 576px) {}
+
+@media only screen and (max-width: 425px) {}
+
+@media only screen and (max-width: 350px) {}
+
+/******************** header design start *******************/
+#header .nav{
+    background: var(--white);
+    color: var(--black);
+    border-bottom: 5px solid var(--border);
 }
 #header .nav_bar{
     width: 100%;
@@ -46,7 +68,7 @@ body{
 #header .nav_bar .logo{
     width: 15%;
     height: 100%;
-    font-size: 30px;
+    font-size: 25px;
 }
 #header .nav_bar .logo img{
     width: 100%;
@@ -69,7 +91,7 @@ body{
     padding: 20px 10px;
     height: 100%;
     cursor: pointer;
-    color: var(--navcolor);
+    color: var(--black);
     font-size: 16px;
     font-weight: 500;
 }
@@ -79,12 +101,12 @@ body{
 }
 
 #header .nav_bar .menu ul li:hover{
-    color: var(--navhover);
+    color: var(--dark);
 }
 
 #header .nav_bar .menu ul li a{
     text-decoration: none;
-    color: var(--navcolor);
+    color: var(--black);
     font-size: 16px;
     font-weight: 500;
 }
@@ -93,12 +115,12 @@ body{
     height: 100%;
     width: 22px;
     text-align: center;
-    color: var(--navcolor);
+    color: var(--black);
     transition: all 0.3s ease;
 }
 
 #header .nav_bar .menu ul li a:hover{
-    color: var(--navhover);
+    color: var(--dark);
 }
 #header .nav_bar .menu ul li:hover .arrow{
     transform: rotate(180deg);
@@ -107,19 +129,19 @@ body{
 #header .nav_bar .menu_icon i {
     line-height: 50px;
     font-size: 35px;
-    color: var(--navcolor);
+    color: var(--black);
     cursor: pointer;
 }
 
 #header .nav_bar .menu_icon i:hover{
-    color: var(--navhover);
+    color: var(--dark);
 }
 
 #header .nav_bar .menu ul li .sub-menu-service {
     position: absolute;
     top: 63px;
-    left: 46%;
-    background: var(--navbg);
+    left: 52%;
+    background: var(--white);
     border-radius: 0 0 4px 4px;
     display: none;
     padding: 0px !important;
@@ -142,13 +164,13 @@ body{
 }
 
 #header .nav_bar .menu ul li .sub-menu-service li:hover{
-    background-color: var(--submenuhover) !important;
+    background-color: var(--background) !important;
 }
 
 #header .nav_bar .menu ul li .megamenu {
     position: absolute;
     top: 63px;
-    background: var(--navbg);
+    background: var(--white);
     border-radius: 0 0 4px 4px;
     display: none;
     cursor: pointer;
@@ -177,7 +199,7 @@ body{
 }
 
 #header .sub_menu_list:hover{
-    background-color: var(--submenuhover);
+    background-color: var(--background);
     border-radius: 8px;
 }
 
@@ -197,64 +219,135 @@ body{
 
 #header .sub_menu_desc{
     font-size: 13px;
-    color: var(--submenuDesc);
+    color: var(--dark);
+}
+
+@media only screen and (max-width: 1100px) {
+    #header .nav_bar .menu ul li .sub-menu-service {
+            left: 45%;
+        }
+    #header .nav_bar .menu ul li .megamenu {
+        left: 15%;
+    }
+    
+}
+
+@media only screen and (max-width: 992px) {
+    #header .nav_bar .menu ul li .megamenu {
+            left: 10%;
+        }
+    .menu .about {
+        display: none;
+    }
+}
+@media only screen and (max-width: 900px) {
+    #header .nav_bar .menu ul li .megamenu {
+            left: 5%;
+        }
+}
+@media only screen and (max-width: 850px) {
+    #header .nav_bar .menu ul li .megamenu {
+            left: 2%;
+        }
+}
+@media only screen and (max-width: 768px) {
+    .menu .product {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #header .logo a{
+        font-size: 20px;
+    }
+    #header .nav_bar .menu_icon i {
+        padding: 0px;
+    }
+    #header .nav_bar .menu {
+        padding: 0px;   
+    }
+    #header .menu .home {
+        display: none;
+    }
+    #header .nav_bar .menu ul li .megamenu {
+        left: 4%;
+    }
+}
+@media only screen and (max-width: 470px) {
+    #header .menu .home {
+        display: none;
+    }
+     #header .nav_bar .menu ul li .sub-menu-service {
+        left: 30%;
+    }
 }
 /* Header design  End*/
 
-
-/* banner design  start*/
-#banner {
-    background-image: url(../images/banner.jpg);
-    width: 100%;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/*********** Menu List start  ***************/
+.menu-container {
+    background-color: var(--white);
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 300px;
+    height: 100vh;
+    overflow-y: auto;
 }
 
-#banner .banner_content {
-    padding-top: 200px;
-
+.menu-container .menu-heading {
+    background-color: var(--black);
 }
 
-#banner .ban_title{
-    color: var(--white);
+.menu-container .menu-title {
+    color: var(--title);
+    padding: 20px 20px;
+    margin-bottom: .0rem;
+    font-weight: 900;
+    font-size: 24px;
+    
 }
 
-#banner .ban_card{
-    background-color: #ffffffc5 !important;
-    border-radius: 8px;
+.menu-container .menu-list {
+    height: 82vh;
+    padding-right: 10px;
 }
 
-#banner .ban_card a{
-    text-decoration: none;
+.menu-container .menu-list .menu-sub-title {
+    padding: 12px 20px;
+    margin-bottom: unset !important;
+    font-weight: 600;
 }
 
-#banner .ban_desc{
-    align-items: center;
-    padding: 5px;
+.menu-container .menu-list .menu-bottom {
+    border-bottom: 2px solid var(--gray) !important;
 }
 
-#banner .ban_img img {
-    width: 70px;
-    padding: 10px;
-}
-
-
-#banner .ban_desc h4 {
-    font-size: 16px;
-    color: #000;
-    margin-bottom: 0px !important;
-}
-
-#banner .ban_desc span {
+.menu-container .menu-list li {
+    list-style: none;
     font-size: 14px;
-    color: #00000098;
 }
 
-#banner .ban_desc:hover{
-    background-color: var(--submenuhover);
+.menu-container .menu-list a {
+    padding: 8px 20px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+    color: var(--black);
+    cursor: pointer;
 }
+
+.menu-container .menu-list a:hover {
+    background-color: var(--gray);
+    color: var(--black);
+}
+
+.menu-container button i:hover {
+    color: var(--warning) !important;
+}
+/*********** Menu List end  ***************/
+
 
 /* banner design end*/
 
@@ -264,8 +357,8 @@ body{
     font-weight: 600;
 }
 
-.s_title {
-    color: var(--s_title);
+.title {
+    color: var(--title);
     font-weight: 600;
 }
 
@@ -273,14 +366,14 @@ body{
     padding: 0px 200px;
     line-height: 1.4;
     font-size: 14px;
-    color: var(--submenuDesc);
+    color: var(--dark);
 }
 
 .text p{
     text-align: justify;
 }
 .title{
-    color: var(--s_title);
+    color: var(--title);
 }
 
 .card_color{
@@ -384,7 +477,7 @@ body{
 }
 
 #software .service-memu li:hover{
-    background-color: var(--submenuhover) !important;
+    background-color: var(--background) !important;
 }
 /* software design end */
 
@@ -462,7 +555,7 @@ body{
 }
 
 #portfolio .p_comp a:hover{
-    color: var(--s_title);
+    color: var(--title);
 }
 
 /* portfolio end */
@@ -471,7 +564,7 @@ body{
 /* about design strat */
 
 #about .about_title{
-    color: var(--s_title);
+    color: var(--title);
 }
 
 #about .about-icon {
@@ -523,7 +616,7 @@ body{
     font-weight: 800;
 }
 
-#about .success_title{
+#about .succestitle{
     font-size: 16px;
     font-weight: 800;
 }
@@ -757,4 +850,276 @@ body{
     color: #fff;
     border: 10px solid #01ce917d;
     background-image: -webkit-linear-gradient(right, #01ce92 0, #58ff83 100%);
+}
+
+#software {
+    background-image: url('../images/backimage.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#software .overlay{
+    background-color: #00000084 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    color: #fff;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about{
+    padding: 40px 0px;
+}
+.about .data {
+    background-color: #f6f9ff;
+    padding: 40px;
+}
+
+.about h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4154f1;
+    text-transform: uppercase;
+}
+
+.about h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #012970;
+}
+
+.about p {
+    margin: 15px 0 30px 0;
+    line-height: 24px;
+}
+
+.about .btn-read-more {
+    line-height: 0;
+    padding: 15px 40px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #4154f1;
+    box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+    text-decoration: none;
+}
+
+.about .btn-read-more span {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.about .btn-read-more i {
+    margin-left: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.about .btn-read-more:hover i {
+    transform: translateX(5px);
+}
+
+/*--------------------------------------------------------------
+# Values
+--------------------------------------------------------------*/
+
+.section-header {
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.section-header h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: #4154f1;
+    text-transform: uppercase;
+}
+
+.section-header p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #012970;
+}
+.values .box {
+    padding: 30px;
+    box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+    text-align: center;
+    transition: 0.3s;
+    height: 100%;
+    background-color: #fff;
+}
+
+.values .box img {
+    padding: 30px 50px;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.values .box h3 {
+    font-size: 24px;
+    color: #012970;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.values .box:hover {
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+
+.values .box:hover img {
+    transform: scale(1);
+}
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+
+
+.features .icon-box {
+    display: flex;
+}
+
+.features .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #012970;
+}
+
+.features .icon-box i {
+    font-size: 44px;
+    line-height: 44px;
+    color: #0245bc;
+    margin-right: 15px;
+}
+
+.features .icon-box p {
+    font-size: 15px;
+    color: #848484;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info-box {
+    color: #444444;
+    background: #fafbff;
+    padding: 30px;
+}
+
+.contact .info-box i {
+    font-size: 38px;
+    line-height: 0;
+    color: #4154f1;
+}
+
+.contact .info-box h3 {
+    font-size: 20px;
+    color: #012970;
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+}
+
+.contact .info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.contact .php-email-form {
+    background: #fafbff;
+    padding: 30px;
+    height: 100%;
+}
+
+.contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+}
+
+.contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+    border-color: #4154f1;
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email] {
+    padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+    padding: 12px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
+    background: #4154f1;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+    background: #5969f3;
+}
+.info-box i{
+    padding-top: 12px !important;
 }
