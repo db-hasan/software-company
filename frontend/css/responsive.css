@@ -14,13 +14,6 @@
 /*End*/
 /* start*/
 @media only screen and (max-width: 1200px) {
-    #website .reverse {
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-    #website .cont_res, .img_res {
-            width: 100% !important;
-        }
 
     #software .menu_list {
             width: 200px;
@@ -29,18 +22,6 @@
 }
 
 @media only screen and (max-width: 992px) {
-    
-    
-    #website .reverse {
-            flex-direction: row-reverse !important;
-        }
-    
-    #website .cont_res,
-        .img_res {
-            width: 50% !important;
-        }
-    
-  
 
     #software .menu_list {
             width: 200px;
@@ -72,28 +53,12 @@
     #software .menu_list {
             width: 200px;
         }
-    #portfolio .tap li {
-            width: 49%;
-        } 
-    #footer .content{
-        padding: 0px 30px;
-    }
 }
 
 @media only screen and (max-width: 576px) {
     .content{
         padding: 0px 10px;
     }
-
-    
-    #website .reverse{
-            flex-direction: column-reverse !important;
-        }
-    #website .cont_res,
-        .img_res {
-            width: 100% !important;
-        }
-
     .s_service h3 {
         font-size: 18px;
         font-weight: 400;
@@ -107,48 +72,11 @@
         width: 200px;
     }
 
-    #footer .footer_two{
-        width: 50% !important;
-        padding-left: 50px !important;
-    }
-    #footer .footer_tre{
-        width: 50% !important;
-        padding-left: 50px !important;
-    }
-
     #background {
              height: 250px;
     }
 
 }
 
-@media only screen and (max-width: 490px) {
-    
-    .contact_card {
-        padding: 30px 20px !important;
-    }
-
-    .contact_card span {
-        padding-right: 5px !important;
-    }
-
-    .contact_card a img {
-        width: 50px !important;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    .contact_card{
-        padding: 30px 10px !important;
-    }
-    .contact_card span{
-        padding-right: 5px !important;
-    }
-    .contact_card a img{
-        width: 45px !important;
-    }
-}
-
-@media only screen and (max-width: 350px) {}
 
 /*End*/
