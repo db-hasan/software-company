@@ -1153,21 +1153,49 @@ body{
 
 
 /************** Hire Pages design Start ************/
-#sellerstore {
+#pagebanner {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#sellerstore .ban-content {
+#pagebanner .ban-content {
     padding: 80px 0px;
-}
-
-#review .reviewby {
-    font-size: 12px;
 }
 /************** Hire Pages design end ************/
 
+#team .box {
+    padding: 5px;
+    background-image: linear-gradient(135deg, #e8f7f6d2, #f5e9e9d7);
+}
 
+#team .box .team-img {
+    margin: auto;
+    width: 100%;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid var(--gray);
+    overflow: hidden;
+}
 
+#team .box .team-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#team .box .team-content {
+    padding: 10px 5px;
+    text-align: center;
+}
+#team .box .team-content .team-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--heading);
+}
+#team .box .team-content .team-designation{
+    font-size: 16px;
+    font-weight: 400;
+}
 
