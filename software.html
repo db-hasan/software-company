@@ -6,156 +6,249 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="frontend/css/bootstrap-5.3.2.min.css">
     <link rel="stylesheet" href="frontend/css/main.css">
-    <link rel="stylesheet" href="frontend/css/responsive.css">
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>SoftxOne Limited</title>
+
+    <heading>SOFTxONE Limited</heading>
 </head>
 
 <body>
-    <section class="content nav fixed-top" id="header">
-        <div class="nav_bar">
-            <div class="logo"><a href="/index.html"><img class="" src="frontend/images/logo.png" alt=""></a></div>
-            <div class="menu">
-                <ul>
-                    <li class="home"><a href="/index.html">Home</a></li>
-                    <li class="service">Service
-                        <i class='bx bxs-chevron-down arrow'></i>
-                        <ul class="sub-menu-service">
-                            <li><a href="/ecomerce.html">eCommerce Website</a></li>
-                            <li><a href="/website.html">Web Development</a></li>
-                            <li><a href="/cms.html">CMS Development</a></li>
-                            <li><a href="/software.html">Software Development</a></li>
-                            <li><a href="/app.html">App Development</a></li>
-                            <li><a href="/marketing.html">SEO & Ads Boosting</a></li>
-                            <li><a href="/graphics.html">Graphics & Animation</a></li>
-                        </ul>
-                    </li>
-                    <li class="product">Product
-                        <i class='bx bxs-chevron-down arrow'></i>
-                        <ul class="megamenu pb-4">
-                            <ul class="menu-list">
-                                <li class="col sub_menu_list">
-                                    <a class="d-flex" href="/softpage.html">
-                                        <span class="img-icon">
-                                            <img src="frontend/images/icon_4.png" alt="">
-                                        </span>
-                                        <div class="sub_menu_content">
-                                            <span class="sub_menu_title">ERP System</span><br>
-                                            <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="col sub_menu_list">
-                                    <a class="d-flex" href="/softpage.html">
-                                        <span class="img-icon">
-                                            <img src="frontend/images/icon_4.png" alt="">
-                                        </span>
-                                        <div class="sub_menu_content">
-                                            <span class="sub_menu_title">POS Software</span><br>
-                                            <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="col sub_menu_list">
-                                    <a class="d-flex" href="/softpage.html">
-                                        <span class="img-icon">
-                                            <img src="frontend/images/icon_4.png" alt="">
-                                        </span>
-                                        <div class="sub_menu_content">
-                                            <span class="sub_menu_title">Inventory</span><br>
-                                            <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
-                                        </div>
-                                    </a>
-                                </li>
+    <!----------- navication bar start------------->
+    <section class="fixed-top" id="header">
+        <div class="nav content">
+            <div class="nav_bar">
+                <div class="logo">
+                    <a href="/index.html" class="text-info" style="text-decoration: none;">
+                        <!-- <img class="" src="" alt=""> -->
+                        <strong>SOFTxONE</strong>
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="home"><a href="/index.html">Home</a></li>
+                        <li class="service">Service
+                            <i class='bx bxs-chevron-down arrow'></i>
+                            <ul class="sub-menu-service">
+                                <li><a href="/ecomerce.html">eCommerce Website</a></li>
+                                <li><a href="/website.html">Web Development</a></li>
+                                <li><a href="/cms.html">CMS Development</a></li>
+                                <li><a href="/software.html">Software Development</a></li>
+                                <li><a href="/app.html">App Development</a></li>
+                                <li><a href="/marketing.html">Ads Boosting</a></li>
+                                <li><a href="/seo.html">SEO Optimization</a></li>
                             </ul>
-                            <ul class="menu-list">
-                                <li class="col sub_menu_list">
-                                    <a class="d-flex" href="/softpage.html">
-                                        <span class="img-icon">
-                                            <img src="frontend/images/icon_4.png" alt="">
-                                        </span>
-                                        <div class="sub_menu_content">
-                                            <span class="sub_menu_title">eCommerce</span><br>
-                                            <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="col sub_menu_list">
-                                    <a class="d-flex" href="/softpage.html">
-                                        <span class="img-icon">
-                                            <img src="frontend/images/icon_4.png" alt="">
-                                        </span>
-                                        <div class="sub_menu_content">
-                                            <span class="sub_menu_title">Pharmacy</span><br>
-                                            <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="col sub_menu_list">
-                                    <a class="d-flex" href="/softpage.html">
-                                        <span class="img-icon">
-                                            <img src="frontend/images/icon_4.png" alt="">
-                                        </span>
-                                        <div class="sub_menu_content">
-                                            <span class="sub_menu_title">Appointment</span><br>
-                                            <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="menu-list">
-                                <li class="col sub_menu_list">
-                                    <a class="d-flex" href="/softpage.html">
-                                        <span class="img-icon">
-                                            <img src="frontend/images/icon_4.png" alt="">
-                                        </span>
-                                        <div class="sub_menu_content">
-                                            <span class="sub_menu_title">Restaurant</span><br>
-                                            <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="col sub_menu_list">
-                                    <a class="d-flex" href="/softpage.html">
-                                        <span class="img-icon">
-                                            <img src="frontend/images/icon_4.png" alt="">
-                                        </span>
-                                        <div class="sub_menu_content">
-                                            <span class="sub_menu_title">School Manage</span><br>
-                                            <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="col sub_menu_list">
-                                    <a class="d-flex" href="/softpage.html">
-                                        <span class="img-icon">
-                                            <img src="frontend/images/icon_4.png" alt="">
-                                        </span>
-                                        <div class="sub_menu_content">
-                                            <span class="sub_menu_title">Hotel Booking</span><br>
-                                            <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </ul>
-                    </li>
-                    <li class="blog"><a href="/blog.html">Blog</a></li>
-                    <li class="portfolio"><a href="/portfolio.html">Portfolio</a></li>
-                    <li class="about"><a href="/about.html">About us</a></li>
-                    <li class="hires"><a href="/hires.html">Hire's</a></li>
-                </ul>
+                        </li>
+                        <li class="product">Product
+                            <i class='bx bxs-chevron-down arrow'></i>
+                            <div class="megamenu pb-4">
+                                <ul class="menu-list">
+                                    <li class="sub_menu_list">
+                                        <a class="d-flex" href="/softpage.html">
+                                            <span class="img-icon">
+                                                <img src="frontend/images/icon_4.png" alt="">
+                                            </span>
+                                            <div class="sub_menu_content">
+                                                <span class="sub_menu_heading">ERP System</span><br>
+                                                <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sub_menu_list">
+                                        <a class="d-flex" href="/softpage.html">
+                                            <span class="img-icon">
+                                                <img src="frontend/images/icon_4.png" alt="">
+                                            </span>
+                                            <div class="sub_menu_content">
+                                                <span class="sub_menu_heading">POS Software</span><br>
+                                                <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sub_menu_list">
+                                        <a class="d-flex" href="/softpage.html">
+                                            <span class="img-icon">
+                                                <img src="frontend/images/icon_4.png" alt="">
+                                            </span>
+                                            <div class="sub_menu_content">
+                                                <span class="sub_menu_heading">Inventory</span><br>
+                                                <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sub_menu_list">
+                                        <a class="d-flex" href="/softpage.html">
+                                            <span class="img-icon">
+                                                <img src="frontend/images/icon_4.png" alt="">
+                                            </span>
+                                            <div class="sub_menu_content">
+                                                <span class="sub_menu_heading">eCommerce</span><br>
+                                                <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sub_menu_list">
+                                        <a class="d-flex" href="/softpage.html">
+                                            <span class="img-icon">
+                                                <img src="frontend/images/icon_4.png" alt="">
+                                            </span>
+                                            <div class="sub_menu_content">
+                                                <span class="sub_menu_heading">Pharmacy</span><br>
+                                                <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sub_menu_list">
+                                        <a class="d-flex" href="/softpage.html">
+                                            <span class="img-icon">
+                                                <img src="frontend/images/icon_4.png" alt="">
+                                            </span>
+                                            <div class="sub_menu_content">
+                                                <span class="sub_menu_heading">Appointment</span><br>
+                                                <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sub_menu_list">
+                                        <a class="d-flex" href="/softpage.html">
+                                            <span class="img-icon">
+                                                <img src="frontend/images/icon_4.png" alt="">
+                                            </span>
+                                            <div class="sub_menu_content">
+                                                <span class="sub_menu_heading">Restaurant</span><br>
+                                                <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sub_menu_list">
+                                        <a class="d-flex" href="/softpage.html">
+                                            <span class="img-icon">
+                                                <img src="frontend/images/icon_4.png" alt="">
+                                            </span>
+                                            <div class="sub_menu_content">
+                                                <span class="sub_menu_heading">School Manage</span><br>
+                                                <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sub_menu_list">
+                                        <a class="d-flex" href="/softpage.html">
+                                            <span class="img-icon">
+                                                <img src="frontend/images/icon_4.png" alt="">
+                                            </span>
+                                            <div class="sub_menu_content">
+                                                <span class="sub_menu_heading">Hotel Booking</span><br>
+                                                <span class="sub_menu_desc">Single & Multy Vendor eCommerce</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="about"><a href="/about.html">About us</a></li>
+                        <li class="hires"><a href="/hires.html">Hire's</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn menu_icon" id="menuButton">
+                    <i class="bx bx-menu-alt-right"></i>
+                </button>
             </div>
-            <div class="menu_icon"><i class='bx bx-menu-alt-right'></i></div>
         </div>
     </section>
-    <div style="margin-bottom: 50px;"></div>
+    <!----------- navication bar end--------------->
+    <div style="padding-top: 43px;" id="myCarousel"></div>
 
-    <section class="container-fluid" id="page">
-        <div class="row page_reverse">
-            <div class="col-lg-6 page_content">
-                <div class="page_title d-flex">
+    <!-- Menu List Stat -->
+    <div class="menu-container" id="menuContainer">
+        <div class="menu-heading d-flex justify-content-between">
+            <h3 class="menu-heading">Quick Link</h3>
+            <button class="btn" id="closeMenu">
+                <i class="fa-solid fa-xmark fa-xl px-3" style="color: #f3124a;"></i>
+            </button>
+        </div>
+        <div class="menu-list custom-scrollbar">
+            <div class="menu-bottom">
+                <h6 class="menu-sub-heading">Our Service Pages</h6>
+                <a href="/ecomerce.html" class="d-flex justify-content-between align-items-center">
+                    <li>eCommerce Website</li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="/website.html" class="d-flex justify-content-between align-items-center">
+                    <li>Web Development</li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="/cms.html" class="d-flex justify-content-between align-items-center">
+                    <li>CMS Development</li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="/software.html" class="d-flex justify-content-between align-items-center">
+                    <li>Software Development</li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="/app.html" class="d-flex justify-content-between align-items-center">
+                    <li>App Development</li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="/marketing.html" class="d-flex justify-content-between align-items-center">
+                    <li>Ads Boosting</li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="/seo.html" class="d-flex justify-content-between align-items-center">
+                    <li>SEO Optimization</li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </div>
+            <div class="menu-bottom">
+                <h6 class="menu-sub-heading">Help & Guidelines</h6>
+                <a href="" class="d-flex justify-content-between align-items-center">
+                    <li>About us</li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="" class="d-flex justify-content-between align-items-center">
+                    <li>Terms & Condition</li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </div>
+            <div class="">
+                <h6 class="menu-sub-heading">Our Software List </h6>
+                <a href="" class="d-flex justify-content-between align-items-center">
+                    <li>ERP Software</li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="" class="d-flex justify-content-between align-items-center">
+                    <li>POS Software</li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="" class="d-flex justify-content-between align-items-center">
+                    <li>Inventory </li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="" class="d-flex justify-content-between align-items-center">
+                    <li>Pharmacy </li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+
+                <a href="" class="d-flex justify-content-between align-items-center">
+                    <li>Booking Appointment</li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="" class="d-flex justify-content-between align-items-center">
+                    <li>Hospital Management</li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="" class="d-flex justify-content-between align-items-center">
+                    <li>Employee Management</li>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Menu List End-->
+
+    <!--====================> page Start ==============-->
+    <section class="container-fluid" id="page" style="background-image: url(/frontend/images/backimage.jpg);">
+        <div class="row overlay">
+            <div class="col-sm-10 col-md-8 col-lg-6">
+                <div class="page_heading d-flex">
                     <span class="left_icon"><img
                             src="https://www.retinasoft.com.bd/assets/img/its/digital-marketing/Highlight_05.png"
                             alt=""></span>
@@ -177,432 +270,26 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 page_img">
-                <span class="d-flex align-item-center justify-content-end">
-                    <img src="/frontend/images/service_website.png" alt="">
-                </span>
-            </div>
         </div>
     </section>
-
-    <section class="content" id="technolgy">
-        <div class="row py-3">
-            <div class="col-lg-6 col-xl-5 pb-4">
-                <div class="technolgy_title pt-3">
-                    <h3>Using Technolgy For Our </h3>
-                    <h4>Professionals Development </h4>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-7 pb-4">
-                <div class="d-flex justify-content-end technolgy_img_card">
-                    <div class="technolgy_img">
-                        <img class="" src="frontend/images/laravel.png" alt="">
-                        <img class="" src="frontend/images/vue.png" alt="">
-                        <img class="" src="frontend/images/react.png" alt="">
-                        <img class="" src="frontend/images/java.png" alt="">
-                        <img class="" src="frontend/images/android.png" alt="">
-                        <img class="" src="frontend/images/apple.png" alt="">
-                        <img class="" src="frontend/images/sql.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--====================> page end ==============-->
 
     <section id="software">
-        <div class="overlay">
-            <h1>dsgfdg</h1>
-        </div>
+        <h1 class="text-center p-5">This page is under constraction</h1>
     </section>
 
-    <!-- ======= About Section ======= -->
 
-    <section id="about" class="about">
-        <div class="content">
-            <div class="row gx-0">
-                <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="data">
-                        <h3>Who We Are</h3>
-                        <h2>Expedita voluptas omnis cupiditate totam eveniet nobis sint iste. Dolores est repellat
-                            corrupti
-                            reprehenderit.</h2>
-                        <p>
-                            Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor
-                            consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et
-                            est
-                            corrupti.
-                        </p>
-                        <div class="text-center text-lg-start">
-                            <a href="#"
-                                class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                                <span>Read More</span>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-                    <img src="frontend/images/about.jpg" class="img-fluid" alt="">
-                </div>
 
-            </div>
-        </div>
-    </section>
 
-    <!-- End About Section -->
 
-    <!-- ======= Values Section ======= -->
-    <section id="values" class="values">
-        <div class="content">
-            <header class="section-header">
-                <h2>Our Values</h2>
-                <p>Odit est perspiciatis laborum et dicta</p>
-            </header>
 
-            <div class="row">
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="box">
-                        <img src="frontend/images/values-1.png" class="img-fluid" alt="">
-                        <h3>Ad cupiditate sed est odio</h3>
-                        <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-                    <div class="box">
-                        <img src="frontend/images/values-2.png" class="img-fluid" alt="">
-                        <h3>Voluptatem voluptatum alias</h3>
-                        <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
-                    <div class="box">
-                        <img src="frontend/images/values-3.png" class="img-fluid" alt="">
-                        <h3>Fugit cupiditate alias nobis.</h3>
-                        <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Values Section -->
 
-    <!-- Feature Icons -->
-    <section class="content features">
-        <header class="section-header">
-            <h2>Our Values</h2>
-            <p>Odit est perspiciatis laborum et dicta</p>
-        </header>
-        <div class="row">
-            <div class="col-xl-4 text-center">
-                <img src="frontend/images/features-3.png" class="img-fluid p-4" alt="">
-            </div>
 
-            <div class="col-xl-8 d-flex">
-                <div class="row align-self-center gy-4">
-                    <div class="col-md-6 icon-box">
-                        <i class="fa-brands fa-meetup"></i>
-                        <div>
-                            <h4>Corporis voluptates sit</h4>
-                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
-                            </p>
-                        </div>
-                    </div>
 
-                    <div class="col-md-6 icon-box">
-                        <i class="fa-brands fa-meetup"></i>
-                        <div>
-                            <h4>Ullamco laboris nisi</h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 icon-box">
-                        <i class="fa-brands fa-meetup"></i>
-                        <div>
-                            <h4>Labore consequatur</h4>
-                            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 icon-box">
-                        <i class="fa-brands fa-meetup"></i>
-                        <div>
-                            <h4>Beatae veritatis</h4>
-                            <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 icon-box">
-                        <i class="fa-brands fa-meetup"></i>
-                        <div>
-                            <h4>Molestiae dolor</h4>
-                            <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 icon-box">
-                        <i class="fa-brands fa-meetup"></i>
-                        <div>
-                            <h4>Explicabo consectetur</h4>
-                            <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-        </div>
-    </section>
-    <!-- End Feature Icons -->
-
-    <section class="content pt-5" id="workprocess">
-        <div class="row">
-            <div class="col-sm-6 col-lg-3 pb-4">
-                <div class="d-flex align-items-center justify-content-center">
-                    <div class="process_icon"><i class="fa-brands fa-connectdevelop one"></i></div>
-                    <div class="process_content">
-                        <h4>01 <span>Step</span></h4>
-                        <p>Concept</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 pb-4">
-                <div class="d-flex align-items-center justify-content-center">
-                    <div class="process_icon"><i class="fa-brands fa-meetup two"></i></div>
-                    <div class="process_content">
-                        <h4>02 <span>Step</span></h4>
-                        <p>Request A Meeting</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 pb-4">
-                <div class="d-flex align-items-center justify-content-center">
-                    <div class="process_icon"><i class="fa-solid fa-code three"></i></div>
-                    <div class="process_content">
-                        <h4>01 <span>Step</span></h4>
-                        <p>Development</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 pb-4">
-                <div class="d-flex align-items-center justify-content-center">
-                    <div class="process_icon"><i class="fa-regular fa-lightbulb four"></i></div>
-                    <div class="process_content">
-                        <h4>04 <span>Step</span></h4>
-                        <p>Test & Launch</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="content" id="portfolio">
-        <div class="pt-5">
-            <div class="s_service d-flex align-items-center justify-content-center pb-2">
-                <span class=""><img src="frontend/images/icon.png" alt="" style="width: 40px;"></span>
-                <h3 class="ps-2 mb-0">Softxone Products</h3>
-            </div>
-            <div class="s_content text-center">
-                <h1 class="s_title">Our Software Solutions</h1>
-                <p>At SoftxOne Digital, we offer comprehensive Digital Marketing Assistance to help you enhance your
-                    brand's
-                    value.</p>
-            </div>
-        </div>
-
-        <div class="row mt-4">
-            <div class="col-md-3 col-sm-6 pb-4">
-                <div class="card p-0">
-                    <div class="p_img position-relative">
-                        <img src="frontend/images/project_thumbnail_1.jpg" class="card-img-top" alt="..." />
-                        <div class="product-btn position-absolute top-50 start-50 translate-middle ">
-                            <div class="text-center text-light p_title my-3">
-                                <div class="p_name"><a href="#">Al Madina Pharmaceuticals</a></div>
-                                <span class="p-cate"><a href="#">Healthcare & Fitness</a></span>
-                            </div>
-                            <div class="d-flex p_btn justify-content-center">
-                                <a class="read" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                                <a class="view" href="#">View Demo <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body p-2 px-3 d-flex align-items-center">
-                        <span><img src="https://retinasoft.com.bd/assets/img/its/coding.png" alt=""
-                                style="width: 50px;"></span>
-                        <span class="p_comp"><a href="#">Al Madina</a></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 pb-4">
-                <div class="card p-0">
-                    <div class="p_img position-relative">
-                        <img src="frontend/images/project_thumbnail_8.jpg" class="card-img-top" alt="..." />
-                        <div class="product-btn position-absolute top-50 start-50 translate-middle ">
-                            <div class="text-center text-light p_title my-3">
-                                <div class="p_name"><a href="#">XFNTY GAMING</a></div>
-                                <span class="p-cate"><a href="#">Business Portfolio</a></span>
-                            </div>
-                            <div class="d-flex p_btn justify-content-center">
-                                <a class="read" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                                <a class="view" href="#">View Demo <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body p-2 px-3 d-flex align-items-center">
-                        <span><img src="https://retinasoft.com.bd/assets/img/its/coding.png" alt=""
-                                style="width: 50px;"></span>
-                        <span class="p_comp"><a href="#">XFNTY GAMING</a></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 pb-4">
-                <div class="card p-0">
-                    <div class="p_img position-relative">
-                        <img src="frontend/images/project_thumbnail_2.jpg" class="card-img-top" alt="..." />
-                        <div class="product-btn position-absolute top-50 start-50 translate-middle ">
-                            <div class="text-center text-light p_title my-3">
-                                <div class="p_name"><a href="#">Shoe Master Footwear</a></div>
-                                <span class="p-cate"><a href="#">Business Portfolio</a></span>
-                            </div>
-                            <div class="d-flex p_btn justify-content-center">
-                                <a class="read" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                                <a class="view" href="#">View Demo <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body p-2 px-3 d-flex align-items-center">
-                        <span><img src="https://retinasoft.com.bd/assets/img/its/coding.png" alt=""
-                                style="width: 50px;"></span>
-                        <span class="p_comp"><a href="#">Shoe Master</a></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 pb-4">
-                <div class="card p-0">
-                    <div class="p_img position-relative">
-                        <img src="frontend/images/project_thumbnail_6.jpg" class="card-img-top" alt="..." />
-                        <div class="product-btn position-absolute top-50 start-50 translate-middle ">
-                            <div class="text-center text-light p_title my-3">
-                                <div class="p_name"><a href="#">Ahyan Jute Mills</a></div>
-                                <span class="p-cate"><a href="#">Business Portfolio</a></span>
-                            </div>
-                            <div class="d-flex p_btn justify-content-center">
-                                <a class="read" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                                <a class="view" href="#">View Demo <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body p-2 px-3 d-flex align-items-center">
-                        <span><img src="https://retinasoft.com.bd/assets/img/its/coding.png" alt=""
-                                style="width: 50px;"></span>
-                        <span class="p_comp"><a href="#">Jute Mills</a></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 pb-4">
-                <div class="card p-0">
-                    <div class="p_img position-relative">
-                        <img src="frontend/images/project_thumbnail_4.jpg" class="card-img-top" alt="..." />
-                        <div class="product-btn position-absolute top-50 start-50 translate-middle ">
-                            <div class="text-center text-light p_title my-3">
-                                <div class="p_name"><a href="#">Business Page</a></div>
-                                <span class="p-cate"><a href="#">e-Commerce</a></span>
-                            </div>
-                            <div class="d-flex p_btn justify-content-center">
-                                <a class="read" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                                <a class="view" href="#">View Demo <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body p-2 px-3 d-flex align-items-center">
-                        <span><img src="https://retinasoft.com.bd/assets/img/its/coding.png" alt=""
-                                style="width: 50px;"></span>
-                        <span class="p_comp"><a href="#">Business Page</a></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 pb-4">
-                <div class="card p-0">
-                    <div class="p_img position-relative">
-                        <img src="frontend/images/project_thumbnail_5.jpg" class="card-img-top" alt="..." />
-                        <div class="product-btn position-absolute top-50 start-50 translate-middle ">
-                            <div class="text-center text-light p_title my-3">
-                                <div class="p_name"><a href="#">Bd Current News24</a></div>
-                                <span class="p-cate"><a href="#">Blog & News Media</a></span>
-                            </div>
-                            <div class="d-flex p_btn justify-content-center">
-                                <a class="read" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                                <a class="view" href="#">View Demo <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body p-2 px-3 d-flex align-items-center">
-                        <span><img src="https://retinasoft.com.bd/assets/img/its/coding.png" alt=""
-                                style="width: 50px;"></span>
-                        <span class="p_comp"><a href="#">News24</a></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 pb-4">
-                <div class="card p-0">
-                    <div class="p_img position-relative">
-                        <img src="frontend/images/project_thumbnail_6.jpg" class="card-img-top" alt="..." />
-                        <div class="product-btn position-absolute top-50 start-50 translate-middle ">
-                            <div class="text-center text-light p_title my-3">
-                                <div class="p_name"><a href="#">Business Portfolio</a></div>
-                                <span class="p-cate"><a href="#">Portfolio</a></span>
-                            </div>
-                            <div class="d-flex p_btn justify-content-center">
-                                <a class="read" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                                <a class="view" href="#">View Demo <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body p-2 px-3 d-flex align-items-center">
-                        <span><img src="https://retinasoft.com.bd/assets/img/its/coding.png" alt=""
-                                style="width: 50px;"></span>
-                        <span class="p_comp"><a href="#">Portfolio</a></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 pb-4">
-                <div class="card p-0">
-                    <div class="p_img position-relative">
-                        <img src="frontend/images/project_thumbnail_7.jpg" class="card-img-top" alt="..." />
-                        <div class="product-btn position-absolute top-50 start-50 translate-middle ">
-                            <div class="text-center text-light p_title my-3">
-                                <div class="p_name"><a href="#">Voetmanschap</a></div>
-                                <span class="p-cate"><a href="#">e-Commerce</a></span>
-                            </div>
-                            <div class="d-flex p_btn justify-content-center">
-                                <a class="read" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                                <a class="view" href="#">View Demo <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body p-2 px-3 d-flex align-items-center">
-                        <span><img src="https://retinasoft.com.bd/assets/img/its/coding.png" alt=""
-                                style="width: 50px;"></span>
-                        <span class="p_comp"><a href="#">Voetmanschap</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!----------- footer start-------------->
     <section class="content py-4" id="footer-card">
         <div class="shadow-lg mb-4 bg-body-tertiary contact_card">
             <div class="row">
@@ -629,12 +316,12 @@
             <div class="content pt-5">
                 <div class="row">
                     <div class="col-sm-9 col-md-8 col-lg-5 pb-5">
-                        <h4 class="widget-title">SoftxOne Limited</h4>
+                        <h4 class="widget-heading">SoftxOne Limited</h4>
                         <p class="sub_content pe-4">We specialize in converting your Vision about your website into
                             Reality. Welcome to SoftxOne
                             Limited, a specialist web design
                             and development agency based in Bangladesh.</p>
-                        <h4 class="widget-title">Subscribe to our newsletter:</h4>
+                        <h4 class="widget-heading">Subscribe to our newsletter:</h4>
                         <form class="">
                             <input type="text" class="form-control subscribe" id="subscribe"
                                 placeholder="name@example.com">
@@ -644,7 +331,7 @@
                     </div>
                     <div class="col-sm-3 col-md-4 col-lg-2 pb-5 footer_two">
                         <div>
-                            <h4 class="widget-title">Quick Links</h4>
+                            <h4 class="widget-heading">Quick Links</h4>
                             <ul>
                                 <li>Portfolio</li>
                                 <li>Blog</li>
@@ -654,7 +341,7 @@
                         </div>
                     </div>
                     <div class="col-sm-5 col-md-6 col-lg-2 pb-5 footer_tre">
-                        <h4 class="widget-title">Features</h4>
+                        <h4 class="widget-heading">Features</h4>
                         <ul>
                             <li>Webiste</li>
                             <li>Software</li>
@@ -663,7 +350,7 @@
                         </ul>
                     </div>
                     <div class="col-sm-7 col-md-6 col-lg-3 pb-5">
-                        <h4 class="widget-title">Contact info</h4>
+                        <h4 class="widget-heading">Contact info</h4>
                         <ul>
                             <li><i class="fa-solid fa-location-dot me-2"></i> Floor - 01, Ranar Plaza, Nawabbari Rd,
                                 Bogura-5800
@@ -694,7 +381,7 @@
             </div>
         </div>
     </section>
-
+    <!----------- footer end--------------->
 
     <script src="frontend/js/jquery-3.6.0.min.js"></script>
     <script src="frontend/js/bootstrap-5.3.2.bundle.min.js"></script>
