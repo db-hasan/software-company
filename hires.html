@@ -160,7 +160,7 @@
     <!-- Menu List Stat -->
     <div class="menu-container" id="menuContainer">
         <div class="menu-heading d-flex justify-content-between">
-            <h3 class="menu-heading">Quick Link</h3>
+            <h3 class="menu-title">Quick Link</h3>
             <button class="btn" id="closeMenu">
                 <i class="fa-solid fa-xmark fa-xl px-3" style="color: #f3124a;"></i>
             </button>
@@ -244,50 +244,97 @@
     </div>
     <!-- Menu List End-->
 
-    <!--====================> page Start ==============-->
-    <section class="container-fluid" id="page" style="background-image: url(/frontend/images/backimage.jpg);">
-        <div class="row overlay">
-            <div class="col-sm-10 col-md-8 col-lg-6">
-                <div class="page_heading d-flex">
-                    <span class="left_icon"><img
-                            src="https://www.retinasoft.com.bd/assets/img/its/digital-marketing/Highlight_05.png"
-                            alt=""></span>
-                    <h1>App Development Promote Your Business</h1>
-                    <span class="right_icon"><img
-                            src="https://www.retinasoft.com.bd/assets/img/its/digital-marketing/Shap.png" alt=""></span>
+    <!------------------------ Banner Start ------------------------------->
+    <section id="sellerstore" style="background-image: url(frontend/images/shop.jpg)">
+        <div class="content">
+            <div class="text-center text-light ban-content">
+                <h1>Rayans Laptop Shop</h1>
+                <p>4th Floor, Shahar Ali market, Mirpur 10</p>
+                <a href="" type="button" class="btn btn-outline-info">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+    <!------------------------ Banner End ----------------------------->
+
+
+
+
+
+
+
+
+
+
+
+    <!----------- contact start------------->
+    <section id="contact">
+        <div class="content">
+            <header class="text-center section-header py-3 pt-4">
+                <h1 class="s_heading">Make a Contact</h1>
+                <p class="s_content">Let’s drop a message to make contact with SOFTxONE.</p>
+            </header>
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <div class="row gy-4">
+                        <div class="col-sm-6 col-md-6">
+                            <div class="info-box shadow-lg">
+                                <i class="fa-solid fa-location-dot "></i>
+                                <h3>Address</h3>
+                                <p>Floor - 01, Ranar Plaza,<br>Nawabbari Rd, Bogura-5800</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="info-box shadow-lg">
+                                <i class="fa-solid fa-phone"></i>
+                                <h3>Call Us</h3>
+                                <p>+880 1723629080<br>+880 1723629080</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="info-box shadow-lg">
+                                <i class="fa-regular fa-envelope-open"></i>
+                                <h3>Email Us</h3>
+                                <p>infoalihasanbd@gmail.com<br>contact@example.com</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="info-box shadow-lg">
+                                <i class="fa-regular fa-clock"></i>
+                                <h3>Open Hours</h3>
+                                <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="page_desc">
-                    <p class="">Softxone Limited is a team of highly skilled programmers and creative designers who are
-                        just striving for the
-                        continuous enhancement of quality. Renovating our notion is our main motto and it will remain
-                        same forever.</p>
-                    <div class="py-3">
-                        <a class="button" href="#">Gat Started <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                    <div class="py-4">
-                        <span class="px-3"><img src="frontend/images/person.png" alt="" style="width: 150px;"></span>
-                        <span>Trusted by 1M+ people around the globe</span>
-                    </div>
+                <div class="col-lg-6">
+                    <form action="" method="post" class="php-email-form ">
+                        <div class="row gy-4">
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                            </div>
+                            <div class="col-md-6 ">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                    required="">
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="subject" placeholder="Subject"
+                                    required="">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                    required=""></textarea>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-    <!--====================> page end ==============-->
-
-    <section id="software">
-        <h1 class="text-center p-5">This page is under constraction</h1>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
+    <!----------- contact end--------------->
 
     <!----------- footer start-------------->
     <section class="content py-4" id="footer-card">
@@ -358,7 +405,8 @@
                             <li><i class="fas fa-envelope me-2"></i><a class="text-dark"
                                     href="">infoalihasanbd@gmail.com</a></li>
                             <li><i class="fas fa-phone me-2"></i> +880 1723629080</li>
-                            <li><i class="fa-solid fa-location-crosshairs me-2"></i> <a href="">Get Directions<i
+                            <li><i class="fa-solid fa-location-crosshairs me-2"></i> <a target="_blank"
+                                    href="https://www.google.com/maps/dir//Bogura,+Bangladesh">Get Directions<i
                                         class="fa-solid fa-square-arrow-up-right ms-2"></i></a></li>
                         </ul>
                     </div>
