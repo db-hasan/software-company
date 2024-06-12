@@ -1164,6 +1164,15 @@ body{
 }
 /************** Hire Pages design end ************/
 
+/************** team design start ************/
+@media only screen and (max-width: 992px) {
+    #aboupage .about-img {
+        display: none;
+    }
+}
+/************** team design start ************/
+
+/************** team design start ************/
 #team .box {
     padding: 5px;
     background-image: linear-gradient(135deg, #e8f7f6d2, #f5e9e9d7);
@@ -1172,7 +1181,7 @@ body{
 #team .box .team-img {
     margin: auto;
     width: 100%;
-    height: 160px;
+    height: 170px;
     border-radius: 50%;
     background-color: #fff;
     border: 2px solid var(--gray);
@@ -1199,3 +1208,32 @@ body{
     font-weight: 400;
 }
 
+@media only screen and (max-width: 992px) {
+    #team .box .team-img {
+        width: 90% !important;
+        height: 190px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #team .content {
+        padding: 10px;
+    }
+    #team .box .team-img {
+        width: 90% !important;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #team .box .team-img {
+        width: 80% !important;
+        height: 215px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    #team .box .team-img {
+        width: 80% !important;
+        height: 160px;
+    }
+}
+/************** team design end ************/
