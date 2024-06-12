@@ -1244,3 +1244,15 @@ body{
     }
 }
 /************** team design end ************/
+
+/************** App Page design start ************/
+@media only screen and (max-width: 992px) {
+    #app .app-col {
+        flex-direction: column-reverse !important;
+        flex-wrap: wrap;
+    }
+    #app img{
+        width: 450px;
+    }
+}
+/************** App Page design end ************/
