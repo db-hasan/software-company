@@ -1017,8 +1017,15 @@ body{
     padding-left: 0px;
 }
 
-#footer .footer ul li {
-    padding: 5px 0px;
+#footer .footer .widget-link  li{
+    padding: 5px 0px !important;
+}
+#footer .footer .widget-content li {
+    padding: 5px 0px !important;
+}
+#footer .footer .widget-link  li a{
+    text-decoration: none;
+    color: var(--black);
 }
 
 .footer form {
